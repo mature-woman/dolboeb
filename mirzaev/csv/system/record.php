@@ -43,14 +43,14 @@ class record
 	/**
 	 * Constructor
 	 *
-	 * @param string|null $row Row for converting to record instance parameters
+	 * @param mixed $parameters Parameter of the record
 	 *
 	 * @return void
 	 */
-	public function __construct(?string $row = null)
+	public function __construct(mixed ...$parameters)
 	{
 		// Initializing parameters
-		if (isset($row)) $this->parameters = static::deserialize($row);
+		if (!empty($parameters)) $this->parameters = $parameters;
 	}
 
 	/**
@@ -105,7 +105,7 @@ class record
 	 *
 	 * @return array Deserialized record
 	 */
-	public function deserialize(string $row): array
+	public static function deserialize(string $row): array
 	{
 		// Separating row by commas
 		preg_match_all('/(.*)(?>(?<!\\\),|$)/Uu', $row, $matches);

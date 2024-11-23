@@ -10,7 +10,7 @@ require(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRE
 $action = 0;
 
 // Initializing the test database
-$database = new database([
+$database = new database(
 	'empty_value_at_the_beginning',
 	'name',
 	'second_name',
@@ -30,12 +30,12 @@ $database = new database([
 	'string_with_space_at_the_beginning',
 	'string_with_escaped_comma',
 	'string_with_unicode_symbols'
-]);
+);
 
 echo '[' . ++$action . "] Created the database instance with columns\n";
 
 // Initializing the test record with the test row
-$record = new record(',"Arsen","Mirzaev","23",true,,"",100,null,"null","102.1",300.34,1001.23145,5000.400.400,"test ""value""","another"" test "" value with ""two double quotes pairs"" yeah"," starts with space","has\, an escaped comma inside","unicode символы"');
+$record = new record(...record::deserialize(',"Arsen","Mirzaev","23",true,,"",100,null,"null","102.1",300.34,1001.23145,5000.400.400,"test ""value""","another"" test "" value with ""two double quotes pairs"" yeah"," starts with space","has\, an escaped comma inside","unicode символы"'));
 
 echo '[' . ++$action . "] Created the record with the test row\n";
 

@@ -69,14 +69,14 @@ class database
 	/**
 	 * Constructor
 	 *
-	 * @param array|null $columns Columns
+	 * @param string ...$columns Columns
 	 *
 	 * @return void
 	 */
-	public function __construct(?array $columns = null)
+	public function __construct(string ...$columns)
 	{
 		// Initializing columns
-		if (isset($columns)) $this->columns = $columns;
+		if (!empty($columns)) $this->columns = $columns;
 	}
 
 	/**
