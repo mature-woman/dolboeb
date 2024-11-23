@@ -1,0 +1,34 @@
+{
+	"name": "mirzaev/csv",
+	"description": "Lightweight library for creating CSV databases",
+	"homepage": "https://git.mirzaev.sexy/mirzaev/csv",
+	"type": "library",
+	"keywords": [
+		"csv",
+		"database"
+	],
+	"readme": "README.md",
+	"license": "WTFPL",
+	"authors": [
+		{
+			"name": "Arsen Mirzaev Tatyano-Muradovich",
+			"email": "arsen@mirzaev.sexy",
+			"homepage": "https://mirzaev.sexy",
+			"role": "Programmer"
+		}
+	],
+	"support": {
+		"email": "arsen@mirzaev.sexy",
+		"wiki": "https://git.mirzaev.sexy/mirzaev/csv/wiki",
+		"issues": "https://git.mirzaev.sexy/mirzaev/csv/issues"
+	},
+	"minimum-stability": "stable",
+	"require": {
+		"php": "^8.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"mirzaev\\csv\\": "mirzaev/csv/system/"
+		}
+	}
+}
