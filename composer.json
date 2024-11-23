@@ -30,5 +30,11 @@
 		"psr-4": {
 			"mirzaev\\csv\\": "mirzaev/csv/system/"
 		}
-	}
+	},
+  "autoload-dev": {
+    "psr-4": {
+      "mirzaev\\csv\\tests\\": "mirzaev/csv/tests"
+    }
+  }
+
 }

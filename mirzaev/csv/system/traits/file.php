@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace mirzaev\site\repression\models\traits;
+namespace mirzaev\csv\traits;
 
 // Built-in libraries
 use Exception as exception,
@@ -26,15 +26,15 @@ trait file
 	 * Read the file
 	 *
 	 * @param resource $file Pointer to the file (fopen())
-	 * @param int $offset Offset of rows for start reading
 	 * @param int $rows Amount of rows for reading
+	 * @param int $offset Offset of rows for start reading
 	 * @param int $position Initial cursor position on a row
 	 * @param int $step Reading step
 	 * @param array &$errors Buffer of errors
 	 *
 	 * @return generator|null|false 
 	 */
-	private static function read($file, int $offset = 0, int $rows = 10, int $position = 0, int $step = 1, array &$errors = []): generator|null|false
+	private static function read($file, int $rows = 10,  int $offset = 0, int $position = 0, int $step = 1, array &$errors = []): generator|null|false
 	{
 		try {
 			while ($offset-- > 0) {
