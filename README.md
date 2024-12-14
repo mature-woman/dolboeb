@@ -1,21 +1,24 @@
-# Comma-Separated Values by RFC 4180
+# Dolboeb database
 A lightweight database in pure PHP<br>
-It will perfectly replace complex databases in simple projects
+
+At the moment the project is a modified RFC 4180
+
+`2024.12.14` **IN DEVELOPMENT! DO NOT USE IN PROJECTS!**
 
 ## Requirements
 - PHP 8.4
 
 ## Installation
-1. `composer require mirzaev/csv`
-2. Create a class that inherits `mirzaev/csv/database` and redefine the `database::FILE` constant
+1. `composer require mirzaev/dolboeb`
+2. Create a class that inherits `mirzaev/dolboeb/database` and redefine the `database::FILE` constant
 3. Enjoy!
 
 ## Example
 ```php
 <?php
 
-// Library for CSV
-use mirzaev\csv\{database, record};
+// Dolboeb database
+use mirzaev\dolboeb\{database, record};
 
 // Initializing the database
 $database = new database('name', 'age', 'created');
