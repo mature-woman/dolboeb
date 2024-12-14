@@ -1,4 +1,4 @@
-# Dolboeb database
+# Ebaboba database
 A lightweight database in pure PHP<br>
 
 At the moment the project is a modified RFC 4180
@@ -9,16 +9,16 @@ At the moment the project is a modified RFC 4180
 - PHP 8.4
 
 ## Installation
-1. `composer require mirzaev/dolboeb`
-2. Create a class that inherits `mirzaev/dolboeb/database` and redefine the `database::FILE` constant
+1. `composer require mirzaev/ebaboba`
+2. Create a class that inherits `mirzaev/ebaboba/database` and redefine the `database::FILE` constant
 3. Enjoy!
 
 ## Example
 ```php
 <?php
 
-// Dolboeb database
-use mirzaev\dolboeb\{database, record};
+// Ebaboba database
+use mirzaev\ebaboba\{database, record};
 
 // Initializing the database
 $database = new database('name', 'age', 'created');
