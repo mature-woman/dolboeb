@@ -1,5 +1,5 @@
 # Ebaboba database
-A lightweight database in pure PHP<br>
+A lightweight database by pure PHP<br>
 
 At the moment the project is a modified RFC 4180
 

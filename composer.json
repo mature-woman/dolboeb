@@ -1,11 +1,12 @@
 {
-	"name": "mirzaev/csv",
-	"description": "Lightweight library for creating CSV databases",
-	"homepage": "https://git.mirzaev.sexy/mirzaev/csv",
-	"type": "library",
+	"name": "mirzaev/ebaboba",
+	"description": "Lightweight binary database by pure PHP",
+	"homepage": "https://git.svoboda.works/mirzaev/ebaboba",
+	"type": "database",
 	"keywords": [
-		"csv",
-		"database"
+		"binary",
+		"plain",
+		"lightweight"
 	],
 	"readme": "README.md",
 	"license": "WTFPL",
@@ -19,8 +20,8 @@
 	],
 	"support": {
 		"email": "arsen@mirzaev.sexy",
-		"wiki": "https://git.mirzaev.sexy/mirzaev/csv/wiki",
-		"issues": "https://git.mirzaev.sexy/mirzaev/csv/issues"
+		"wiki": "https://git.svoboda.works/mirzaev/ebaboba/wiki",
+		"issues": "https://git.svoboda.works/mirzaev/ebaboba/issues"
 	},
 	"minimum-stability": "stable",
 	"require": {
@@ -28,12 +29,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"mirzaev\\csv\\": "mirzaev/csv/system/"
+			"mirzaev\\ebaboba\\": "mirzaev/ebaboba/system/"
 		}
 	},
   "autoload-dev": {
     "psr-4": {
-      "mirzaev\\csv\\tests\\": "mirzaev/csv/tests"
+      "mirzaev\\ebaboba\\tests\\": "mirzaev/ebaboba/tests"
     }
   }
 
