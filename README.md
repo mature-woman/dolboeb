@@ -1,4 +1,4 @@
-# Ebaboba
+# Baza
 Lightweight binary database by pure PHP<br>
 
 ## Dependencies
@@ -6,17 +6,17 @@ Lightweight binary database by pure PHP<br>
 2. ![Composer](https://getcomposer.org/) (php package manager)
 
 ## Installation
-`composer require mirzaev/ebaboba`
+`composer require mirzaev/baza`
 
 ## Example
 ```php
 <?php
 
-use use mirzaev\ebaboba\database,
-	mirzaev\ebaboba\column,
-	mirzaev\ebaboba\record,
-	mirzaev\ebaboba\enumerations\encoding,
-	mirzaev\ebaboba\enumerations\type;
+use use mirzaev\baza\database,
+	mirzaev\baza\column,
+	mirzaev\baza\record,
+	mirzaev\baza\enumerations\encoding,
+	mirzaev\baza\enumerations\type;
 
 // Initializing the database
 $database = new database()
