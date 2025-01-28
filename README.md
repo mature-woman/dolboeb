@@ -12,17 +12,17 @@ Lightweight binary database by pure PHP<br>
 ```php
 <?php
 
-use use mirzaev\baza\database,
-	mirzaev\baza\column,
-	mirzaev\baza\record,
-	mirzaev\baza\enumerations\encoding,
-	mirzaev\baza\enumerations\type;
+use mirzaev\baza\database,
+    mirzaev\baza\column,
+    mirzaev\baza\record,
+    mirzaev\baza\enumerations\encoding,
+    mirzaev\baza\enumerations\type;
 
 // Initializing the database
 $database = new database()
-	->encoding(encoding::utf8)
+    ->encoding(encoding::utf8)
 	->columns(
-		new column('name', type::string, ['length' => 32]),
+        new column('name', type::string, ['length' => 32]),
 		new column('second_name', type::string, ['length' => 64]),
 		new column('age', type::integer),
 		new column('height', type::float)
