@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace mirzaev\ebaboba;
+namespace mirzaev\baza;
 
 // Files of the project
-use mirzaev\ebaboba\database,
-	mirzaev\ebaboba\enumerations\type;
+use mirzaev\baza\database,
+	mirzaev\baza\enumerations\type;
 
 // Built-in libraries
 use DomainException as exception_domain,
@@ -16,7 +16,7 @@ use DomainException as exception_domain,
 /**
  * Column
  *
- * @package mirzaev\ebaboba
+ * @package mirzaev\baza
  *
  * @var string $name Name of the column
  * @var type $type Type of the column values

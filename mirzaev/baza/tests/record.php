@@ -1,10 +1,10 @@
 <?php
 
-use mirzaev\ebaboba\database,
-	mirzaev\ebaboba\record,
-	mirzaev\ebaboba\column,
-	mirzaev\ebaboba\enumerations\encoding,
-	mirzaev\ebaboba\enumerations\type;
+use mirzaev\baza\database,
+	mirzaev\baza\record,
+	mirzaev\baza\column,
+	mirzaev\baza\enumerations\encoding,
+	mirzaev\baza\enumerations\type;
 
 // Importing files of thr project and dependencies
 require(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php');
@@ -249,7 +249,7 @@ try {
 $test = 0;
 
 // Updating the record in the database
-$records_readed_filter_update = $database->read(filter: fn($record) => $record?->name === 'Margarita', update: function (&$record) { $record->height += 0.5; }, amount: 1);
+$records_readed_filter_update = $database->read(filter: fn($record) => $record?->name === 'Margarita', update: fn(&$record) => $record->height += 0.5, amount: 1);
 
 echo '[' . ++$action . "] Updated the record in the database by filter\n";
 

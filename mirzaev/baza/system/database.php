@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace mirzaev\ebaboba;
+namespace mirzaev\baza;
 
 // Files of the project
-use mirzaev\ebaboba\enumerations\encoding,
-	mirzaev\ebaboba\enumerations\type;
+use mirzaev\baza\enumerations\encoding,
+	mirzaev\baza\enumerations\type;
 
 // Built-in libraries
 use LogicException as exception_logic,
@@ -16,7 +16,7 @@ use LogicException as exception_logic,
 /**
  * Database
  *
- * @package mirzaev\ebaboba
+ * @package mirzaev\baza
  *
  * @var string $database Path to the database file
  * @var string $backups Path to the backups files directory

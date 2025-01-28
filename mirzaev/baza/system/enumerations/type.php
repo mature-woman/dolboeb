@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace mirzaev\ebaboba\enumerations;
+namespace mirzaev\baza\enumerations;
 
 // Build-in libraries
 use UnexpectedValueException as exception_unexpected_value;
@@ -12,7 +12,7 @@ use UnexpectedValueException as exception_unexpected_value;
  *
  * @see https://www.php.net/pack Types
  *
- * @package mirzaev\ebaboba\enumerations
+ * @package mirzaev\baza\enumerations
  *
  * @license http://www.wtfpl.net/ Do What The Fuck You Want To Public License
  * @author Arsen Mirzaev Tatyano-Muradovich <arsen@mirzaev.sexy>

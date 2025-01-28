@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace mirzaev\ebaboba;
-
+namespace mirzaev\baza;
 
 /**
  * Record
  *
- * @package mirzaev\ebaboba
+ * @package mirzaev\baza
  *
  * @var array $values The record values
  *

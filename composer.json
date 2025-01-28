@@ -1,7 +1,7 @@
 {
-	"name": "mirzaev/ebaboba",
+	"name": "mirzaev/baza",
 	"description": "Lightweight binary database by pure PHP",
-	"homepage": "https://git.svoboda.works/mirzaev/ebaboba",
+	"homepage": "https://git.svoboda.works/mirzaev/baza",
 	"type": "database",
 	"keywords": [
 		"binary",
@@ -20,8 +20,8 @@
 	],
 	"support": {
 		"email": "arsen@mirzaev.sexy",
-		"wiki": "https://git.svoboda.works/mirzaev/ebaboba/wiki",
-		"issues": "https://git.svoboda.works/mirzaev/ebaboba/issues"
+		"wiki": "https://git.svoboda.works/mirzaev/baza/wiki",
+		"issues": "https://git.svoboda.works/mirzaev/baza/issues"
 	},
 	"minimum-stability": "stable",
 	"require": {
@@ -29,12 +29,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"mirzaev\\ebaboba\\": "mirzaev/ebaboba/system/"
+			"mirzaev\\baza\\": "mirzaev/baza/system/"
 		}
 	},
   "autoload-dev": {
     "psr-4": {
-      "mirzaev\\ebaboba\\tests\\": "mirzaev/ebaboba/tests"
+      "mirzaev\\baza\\tests\\": "mirzaev/baza/tests"
     }
   }
 
