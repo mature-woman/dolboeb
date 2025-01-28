@@ -2,8 +2,8 @@
 Lightweight binary database by pure PHP<br>
 
 ## Dependencies
-1. ![PHP 8.4](https://www.php.net/releases/8.4/en.php)
-2. ![Composer](https://getcomposer.org/) (php package manager)
+1. [PHP 8.4](https://www.php.net/releases/8.4/en.php)
+2. [Composer](https://getcomposer.org/) (php package manager)
 
 ## Installation
 `composer require mirzaev/baza`
