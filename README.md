@@ -21,20 +21,20 @@ use mirzaev\baza\database,
 // Initializing the database
 $database = new database()
     ->encoding(encoding::utf8)
-	->columns(
+    ->columns(
         new column('name', type::string, ['length' => 32]),
-		new column('second_name', type::string, ['length' => 64]),
-		new column('age', type::integer),
-		new column('height', type::float)
-	)
-	->connect(__DIR__ . DIRECTORY_SEPARATOR . 'database.ba');
+        new column('second_name', type::string, ['length' => 64]),
+        new column('age', type::integer),
+        new column('height', type::float)
+    )
+    ->connect(__DIR__ . DIRECTORY_SEPARATOR . 'database.ba');
 
 // Initializing the record
 $record = $database->record(
-	'Arsen',
-	'Mirzaev',
-	23,
-	(float) 165
+    'Arsen',
+    'Mirzaev',
+    23,
+    (float) 165
 );
 
 if ($database->write($record)) {
